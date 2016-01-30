@@ -4,6 +4,7 @@ using System.Collections;
 public class Move : MonoBehaviour
 {
 	bool roul;
+	public float roulT = 2.5f;
 	public float speed, dashspeed = 2.5f;
 	public Rigidbody rig;
 	private Vector3 moveDirection = Vector3.zero;
@@ -18,7 +19,10 @@ public class Move : MonoBehaviour
 	{
 		handle_button();
 		set_move();
-
+		if (roulT > 0)
+			roulT -= 0.1f;
+		else if (roulT == 0)
+			roul = true;
 	}
 
 	void	set_move()
@@ -61,8 +65,8 @@ public class Move : MonoBehaviour
 			controller.Move (transform.TransformDirection(Vector3.forward) * dashspeed);
 			Debug.Log ("BAS");
 		}
-
 		roul = false;
+
 	}
 
 	void	attaque()

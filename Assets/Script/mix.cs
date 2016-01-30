@@ -5,34 +5,62 @@ using UnityEngine.SceneManagement;
 public class mix : MonoBehaviour
 {
 
-   	public GameObject Objects;
+    public GameObject Grounds;
+    public GameObject Walls;
     public int len;
     public int width;
+    public int freq;
     public float ang;
-	public Vector3 tmp;
+    public Vector3 tmp;
     public GameObject[] sprites;
+
+	void pathmerge(GameObject parent, bool recalc)
+    {
+        MeshFilter[] meshFilters = parent.GetComponentsInChildren<MeshFilter>();
+        CombineInstance[] combine = new CombineInstance[meshFilters.Length];
+		MeshCollider collid = parent.GetComponent<MeshCollider> ();
+
+        int i = 0;
+        while (i < meshFilters.Length)
+        {
+            combine[i].mesh = meshFilters[i].sharedMesh;
+            combine[i].transform = meshFilters[i].transform.localToWorldMatrix;
+            meshFilters[i].gameObject.SetActive(false);
+            i++;
+        }
+        parent.transform.GetComponent<MeshFilter>().mesh = new Mesh();
+        parent.transform.GetComponent<MeshFilter>().mesh.CombineMeshes(combine);
+        parent.transform.gameObject.SetActive(true);
+	//	collid.sharedMesh.RecalculateNormals();
+    }
 
     void Start()
     {
         GameObject clone;
-        
+
         for (int i = 0; i <= len; i++)
         {
-            for (int j = -width; j <= width; j++)
+            if (i % freq == 0)
             {
-                if (j == -width || j == width)
-                    clone = (GameObject)Instantiate(sprites[1], transform.position + tmp * j, Quaternion.identity);
-                else
-                    clone = (GameObject)Instantiate(sprites[0], transform.position + tmp * j, Quaternion.identity);
-				clone.transform.parent = Objects.transform;
+                clone = (GameObject)Instantiate(sprites[0], transform.position, transform.localRotation);
+                clone.transform.parent = Grounds.transform;
+            }
+            if (i % (freq / 2) == 0)
+            { 
+                clone = (GameObject)Instantiate(sprites[1], transform.position + tmp * -width, transform.localRotation);
+                clone.transform.parent = Walls.transform;
+                clone = (GameObject)Instantiate(sprites[1], transform.position + tmp * width, transform.localRotation);
+                clone.transform.parent = Walls.transform;
             }
             transform.Rotate(Vector3.up * Random.Range(-ang, ang));
             if (transform.rotation.y < 0.76)
                 transform.rotation = Quaternion.Euler(0, 100, 0);
             if (transform.rotation.y > 0.99)
                 transform.rotation = Quaternion.Euler(0, 170, 0);
-			transform.Translate(Vector3.right);
+            transform.Translate(Vector3.right);
         }
+		pathmerge(Grounds, false);
+		pathmerge(Walls, true);
     }
 
     void Update()
