@@ -12,7 +12,7 @@ public class light : MonoBehaviour {
 	
 	// Update is called once per frame
 	void changelight () {
-		li.intensity = Random.Range (2f, 3f);
+		li.intensity = Random.Range (1.5f, 2.5f);
 	}
 
 }
