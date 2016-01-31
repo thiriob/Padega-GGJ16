@@ -1,15 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class mix : MonoBehaviour
 {
-
     public GameObject Grounds;
     public GameObject Walls;
     public Vector3 tmp;
     public GameObject[] sprites;
     public int nbsalle;
+    public GameObject[] objets;
+    public float[] pourcentage;
+    public Vector3[] decalobj;
+
+    void putobject(int j, int k, int dist, float mult)
+    {
+        float rnd = Random.Range(0, 100);
+        GameObject clone;
+
+        for (int i = 0; i < pourcentage.Length; i++)
+            if (pourcentage[i] * mult >= rnd)
+                clone = (GameObject)Instantiate(objets[i], transform.position + transform.right * dist * (-k + decalobj[i].y) + transform.forward * dist * (j + decalobj[i].x) + transform.up, objets[i].transform.rotation);
+    }
 
     void pathmerge(GameObject parent)
     {
@@ -56,12 +69,11 @@ public class mix : MonoBehaviour
         }
     }
 
-    void salle(int width, int height, int dist)
+    void salle(int width, int height, int dist, bool ferme)
     {
         GameObject clone;
-		Vector3 tmp = transform.position;
-		float decal = 0.0002f;
-
+        Vector3 tmp = transform.position + transform.right * 3;
+        float decal = 0.0002f;
         int i = 1, j = 1;
 
         while (--i >= -width)
@@ -71,32 +83,40 @@ public class mix : MonoBehaviour
             {
                 clone = (GameObject)Instantiate(sprites[0], tmp + -transform.right * dist * j + transform.forward * dist * i, transform.rotation);
                 clone.transform.parent = Grounds.transform;
-                if ((j == 0 && i!= 0) || (j == -height && i != -width))
+                if ((j == 0 && i != 0) || (j == -height && i != -width) || (j == -height && ferme == true))
                 {
-					clone = (GameObject)Instantiate(sprites[2], tmp + -transform.right * dist * (j - ((j == 0) ? (-0.5f) : (0.5f))) + transform.forward * dist * i + new Vector3(0, decal *= -1, 0), transform.rotation);
+                    clone = (GameObject)Instantiate(sprites[2], tmp + -transform.right * dist * (j - ((j == 0) ? (-0.5f) : (0.5f))) + transform.forward * dist * i + new Vector3(0, decal *= -1, 0), transform.rotation);
                     clone.transform.parent = Walls.transform;
                 }
                 if (i == 0 || i == -width)
                 {
-					clone = (GameObject)Instantiate(sprites[2], tmp + -transform.right * dist * j + transform.forward * dist * (i - ((i == 0) ? (-0.5f) : (0.5f))) + new Vector3(0, decal *= -1, 0), transform.rotation);
+                    clone = (GameObject)Instantiate(sprites[2], tmp + -transform.right * dist * j + transform.forward * dist * (i - ((i == 0) ? (-0.5f) : (0.5f))) + new Vector3(0, decal *= -1, 0), transform.rotation);
                     clone.transform.Rotate(Vector3.up, 90);
                     clone.transform.parent = Walls.transform;
                 }
+                if (ferme == false)
+                    putobject(i, j, dist, 1);
             }
-            
+
         }
-        transform.position = tmp + -transform.right * dist * j + transform.forward * dist * (i + 1);
+        transform.position = tmp + -transform.right * dist * (j + 0.5f) + transform.forward * dist * (i + 1);
     }
 
     void Start()
     {
+        GameObject clone = (GameObject)Instantiate(sprites[2], transform.position - transform.right, transform.rotation);
+        clone.transform.parent = Walls.transform;
+        chemin(Random.Range(50, 200), 4, 7, 10, 0);
         for (int i = 0; i <= nbsalle; i++)
         {
-            chemin(Random.Range(50, 50), 4, 7, 10, 0);
-            salle(Random.Range(1, 5), Random.Range(1, 5), 11);
+            salle(Random.Range(1, 5), Random.Range(1, 5), 11, false);
+            chemin(Random.Range(50, 200), 4, 7, 10, 0);
         }
+        salle(6, 6, 11, true);
+
         pathmerge(Grounds);
         pathmerge(Walls);
+
     }
 
     void Update()
@@ -104,4 +124,12 @@ public class mix : MonoBehaviour
         if (Input.GetKey(KeyCode.R))
             SceneManager.LoadScene(0);
     }
+
+	void	OnCollisionEnter(Collision hit)
+	{
+		if (hit.transform.tag == "")
+		{
+
+		}
+	}
 }
