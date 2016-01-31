@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UI : MonoBehaviour {
+public class lifeb : MonoBehaviour {
 	public float lifemax;
 	public float life;
 	public Color green= new Color(0,1,0,1);

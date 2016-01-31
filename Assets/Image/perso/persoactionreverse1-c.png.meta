@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 0025f62db54861249b87f532179a358c
+timeCreated: 1454247665
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: persoactionreverse1-c_0
+    21300002: persoactionreverse1-c_1
+    21300004: persoactionreverse1-c_2
+    21300006: persoactionreverse1-c_3
+    21300008: persoactionreverse1-c_4
+    21300010: persoactionreverse1-c_5
+    21300012: persoactionreverse1-c_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: persoactionreverse1-c_0
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 23
+        width: 191
+        height: 473
+      alignment: 9
+      pivot: {x: 0.51205873, y: 0.24314268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 2.1967773, y: -109.006485}
+        - {x: 0.19677734, y: -110.006485}
+        - {x: 0.19677734, y: -115.006485}
+        - {x: 6.1967773, y: -115.006485}
+        - {x: 7.1967773, y: -112.006485}
+        - {x: 7.1967773, y: -109.006485}
+      - - {x: 79.19678, y: 141.99352}
+        - {x: 76.19678, y: 143.99352}
+        - {x: 81.19678, y: 143.99352}
+        - {x: 93.19678, y: 147.99352}
+        - {x: 93.19678, y: 291.99353}
+        - {x: 20.196777, y: 332.99353}
+        - {x: -57.803223, y: 332.99353}
+        - {x: -95.80322, y: 290.99353}
+        - {x: -95.80322, y: -114.006485}
+        - {x: -61.803223, y: -114.006485}
+        - {x: 18.196777, y: -82.006485}
+        - {x: 22.196777, y: -80.006485}
+        - {x: 25.196777, y: -80.006485}
+        - {x: 24.196777, y: -80.006485}
+        - {x: 21.196777, y: -81.006485}
+        - {x: 10.196777, y: -93.006485}
+        - {x: -8.803223, y: -114.006485}
+        - {x: 71.19678, y: -114.006485}
+        - {x: 93.19678, y: -92.006485}
+        - {x: 93.19678, y: -11.006485}
+        - {x: 86.19678, y: 93.993515}
+      - - {x: -26.803223, y: -110.006485}
+        - {x: -23.803223, y: -109.006485}
+        - {x: -23.803223, y: -106.006485}
+        - {x: -26.803223, y: -105.006485}
+        - {x: -28.803223, y: -107.006485}
+      - - {x: 11.196777, y: -93.006485}
+        - {x: 14.196777, y: -92.006485}
+        - {x: 14.196777, y: -89.006485}
+        - {x: 11.196777, y: -88.006485}
+        - {x: 9.196777, y: -90.006485}
+      - - {x: -76.80322, y: 4.993515}
+        - {x: -78.80322, y: 5.993515}
+        - {x: -81.80322, y: 4.993515}
+        - {x: -84.80322, y: -14.006485}
+        - {x: -78.80322, y: -21.006485}
+        - {x: -76.80322, y: -21.006485}
+        - {x: -74.80322, y: -19.006485}
+        - {x: -74.80322, y: -11.006485}
+      - - {x: 89.19678, y: 11.993515}
+        - {x: 84.19678, y: 6.993515}
+        - {x: 84.19678, y: -1.006485}
+        - {x: 86.19678, y: -7.006485}
+        - {x: 93.19678, y: -7.006485}
+        - {x: 93.19678, y: 11.993515}
+      - - {x: -79.80322, y: 16.993515}
+        - {x: -79.80322, y: 13.993515}
+        - {x: -77.80322, y: 11.993515}
+        - {x: -74.80322, y: 12.993515}
+        - {x: -73.80322, y: 16.993515}
+        - {x: -75.80322, y: 18.993515}
+        - {x: -77.80322, y: 18.993515}
+      - - {x: -77.80322, y: 100.993515}
+        - {x: -77.80322, y: 79.993515}
+        - {x: -76.80322, y: 73.993515}
+        - {x: -73.80322, y: 72.993515}
+        - {x: -70.80322, y: 73.993515}
+        - {x: -69.80322, y: 91.993515}
+        - {x: -69.80322, y: 98.993515}
+        - {x: -72.80322, y: 100.993515}
+      - - {x: -83.80322, y: 144.99352}
+        - {x: -84.80322, y: 142.99352}
+        - {x: -84.80322, y: 133.99352}
+        - {x: -82.80322, y: 129.99352}
+        - {x: -80.80322, y: 127.993515}
+        - {x: -77.80322, y: 128.99352}
+        - {x: -77.80322, y: 141.99352}
+        - {x: -80.80322, y: 144.99352}
+      - - {x: -91.80322, y: 194.99352}
+        - {x: -92.80322, y: 193.99352}
+        - {x: -92.80322, y: 166.99352}
+        - {x: -88.80322, y: 156.99352}
+        - {x: -82.80322, y: 156.99352}
+        - {x: -82.80322, y: 192.99352}
+        - {x: -86.80322, y: 194.99352}
+      - - {x: -73.80322, y: 223.99352}
+        - {x: -70.80322, y: 224.99352}
+        - {x: -70.80322, y: 227.99352}
+        - {x: -73.80322, y: 228.99352}
+        - {x: -75.80322, y: 226.99352}
+      - - {x: -90.80322, y: 226.99352}
+        - {x: -87.80322, y: 227.99352}
+        - {x: -87.80322, y: 230.99352}
+        - {x: -90.80322, y: 231.99352}
+        - {x: -92.80322, y: 229.99352}
+      - - {x: 79.19678, y: 258.99353}
+        - {x: 82.19678, y: 259.99353}
+        - {x: 82.19678, y: 262.99353}
+        - {x: 79.19678, y: 263.99353}
+        - {x: 77.19678, y: 261.99353}
+      - - {x: 90.19678, y: 304.99353}
+        - {x: 89.19678, y: 301.99353}
+        - {x: 92.19678, y: 297.99353}
+        - {x: 93.19678, y: 297.99353}
+        - {x: 93.19678, y: 303.99353}
+        - {x: 92.19678, y: 304.99353}
+      - - {x: 26.196777, y: 319.99353}
+        - {x: 26.196777, y: 316.99353}
+        - {x: 29.196777, y: 314.99353}
+        - {x: 32.196777, y: 314.99353}
+        - {x: 34.196777, y: 315.99353}
+        - {x: 34.196777, y: 318.99353}
+        - {x: 31.196777, y: 321.99353}
+        - {x: 28.196777, y: 321.99353}
+      - - {x: -91.80322, y: 345.99353}
+        - {x: -92.80322, y: 340.99353}
+        - {x: -90.80322, y: 338.99353}
+        - {x: -89.80322, y: 338.99353}
+        - {x: -86.80322, y: 341.99353}
+        - {x: -86.80322, y: 344.99353}
+        - {x: -88.80322, y: 346.99353}
+      - - {x: -13.803223, y: 357.99353}
+        - {x: -12.803223, y: 354.99353}
+        - {x: -7.8032227, y: 354.99353}
+        - {x: -5.8032227, y: 356.99353}
+        - {x: -5.8032227, y: 357.99353}
+    - name: persoactionreverse1-c_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 492
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-c_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 452
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-c_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 424
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-c_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 363
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-c_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 248
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-c_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 132
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,95 @@
+fileFormatVersion: 2
+guid: 559463dd107e57f4fbae2b676af98126
+timeCreated: 1454244150
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: persoactionface1-3_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: persoactionface1-3_0
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 29
+        width: 160
+        height: 432
+      alignment: 9
+      pivot: {x: 0.5000002, y: 0.22542943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 79.99997, y: 33.614487}
+        - {x: 77.99997, y: 53.614487}
+        - {x: 65.99997, y: 127.61449}
+        - {x: 79.99997, y: 179.61449}
+        - {x: 79.99997, y: 271.6145}
+        - {x: 77.99997, y: 280.6145}
+        - {x: 39.99997, y: 326.6145}
+        - {x: 34.99997, y: 325.6145}
+        - {x: 6.9999695, y: 334.6145}
+        - {x: -30.00003, y: 334.6145}
+        - {x: -78.00003, y: 267.6145}
+        - {x: -78.00003, y: 202.61449}
+        - {x: -70.00003, y: 156.61449}
+        - {x: -75.00003, y: 85.61449}
+        - {x: -67.00003, y: -35.385513}
+        - {x: -52.00003, y: -97.38551}
+        - {x: 46.99997, y: -97.38551}
+        - {x: 46.99997, y: -45.385513}
+        - {x: 74.99997, y: -34.385513}
+        - {x: 79.99997, y: -21.385513}
+      - - {x: -60.00003, y: 310.6145}
+        - {x: -59.00003, y: 308.6145}
+        - {x: -53.00003, y: 308.6145}
+        - {x: -53.00003, y: 315.6145}
+        - {x: -56.00003, y: 315.6145}
+        - {x: -60.00003, y: 312.6145}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

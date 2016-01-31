@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
 	public CharacterController controller;
 	public GameObject frappe;
 	private BoxCollider box;
+	public Animator anim;
 	// Use this for initialization
 	void Start ()
 	{
@@ -30,16 +31,21 @@ public class Move : MonoBehaviour
 		set_move();
 		manage_stamina();
 		timer ();
+		do_anim ();
 	}
 
 	void	set_move()
 	{
+		
 		if (!att) {
 			moveDirection = new Vector3 (Input.GetAxis ("Horizontal") * -1, 0, Input.GetAxis ("Vertical") * -1);
 			moveDirection = transform.TransformDirection (moveDirection);
 			moveDirection *= speed;
 			controller.Move (moveDirection * Time.deltaTime);
 		}
+		Vector3 tmp = transform.position;
+		tmp.y = -0.1f;
+		transform.position = tmp;
 	}
 
 
@@ -112,7 +118,6 @@ public class Move : MonoBehaviour
 			tmp.x -= frappedist;
 			tmp.z += frappedist;
 
-
 		} 
 		else if (Input.GetAxis ("Horizontal") < 0) {
 			tmp.x += (frappedist + offset);
@@ -146,11 +151,30 @@ public class Move : MonoBehaviour
 		}
 	}
 
+	void do_anim()
+	{
+		if (Input.GetAxis ("Horizontal") > 0.5f)
+			anim.Play ("perso autre cote");
+		else if (Input.GetAxis ("Horizontal") < -0.5f) 
+			anim.Play ("perso coter");
+		else if (Input.GetAxis ("Vertical") > -0.5f) 
+			anim.Play ("perso dos");
+		else if (Input.GetAxis ("Vertical") < 0.5f) 
+				anim.Play ("perso devant");
+	}
+
 	void	OnTriggerEnter(Collider hit)
 	{
 		if (hit.transform.tag == "item") {
 			audio.PlayOneShot(clip);
 			Destroy (hit.gameObject);
+		}
+	}
+	void	OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		if (hit.transform.tag == "fantome") {
+			lifeb scri = this.GetComponent<lifeb>();
+			scri.life -= 5;
 		}
 	}
 }

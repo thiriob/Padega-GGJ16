@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: 585bdc75be03df54e905e4cc409cd92e
+timeCreated: 1454247637
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: persoactionreverse1-a_0
+    21300002: persoactionreverse1-a_1
+    21300004: persoactionreverse1-a_2
+    21300006: persoactionreverse1-a_3
+    21300008: persoactionreverse1-a_4
+    21300010: persoactionreverse1-a_5
+    21300012: persoactionreverse1-a_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: persoactionreverse1-a_0
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 18
+        width: 190
+        height: 478
+      alignment: 9
+      pivot: {x: 0.51515263, y: 0.24703409}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.121, y: 280.91772}
+        - {x: 43.121002, y: 328.91772}
+        - {x: -2.8789978, y: 334.91772}
+        - {x: -23.878998, y: 334.91772}
+        - {x: -73.879, y: 311.91772}
+        - {x: -70.879, y: 298.91772}
+        - {x: -61.878998, y: 297.91772}
+        - {x: -64.879, y: 293.91772}
+        - {x: -96.879, y: 272.91772}
+        - {x: -96.879, y: 254.91771}
+        - {x: -44.878998, y: 111.91771}
+        - {x: -68.879, y: -12.082291}
+        - {x: -45.878998, y: -110.08229}
+        - {x: -19.878998, y: -113.08229}
+        - {x: 57.121002, y: -113.08229}
+        - {x: 59.121002, y: -109.08229}
+        - {x: 91.121, y: 56.91771}
+        - {x: 92.121, y: 73.91771}
+      - - {x: -76.879, y: -42.08229}
+        - {x: -76.879, y: -46.08229}
+        - {x: -70.879, y: -51.08229}
+        - {x: -65.879, y: -51.08229}
+        - {x: -65.879, y: -47.08229}
+        - {x: -66.879, y: -42.08229}
+        - {x: -72.879, y: -38.08229}
+        - {x: -75.879, y: -39.08229}
+      - - {x: -53.878998, y: -42.08229}
+        - {x: -52.878998, y: -45.08229}
+        - {x: -49.878998, y: -45.08229}
+        - {x: -47.878998, y: -43.08229}
+        - {x: -48.878998, y: -40.08229}
+        - {x: -51.878998, y: -40.08229}
+      - - {x: 90.121, y: 13.917709}
+        - {x: 86.121, y: 12.917709}
+        - {x: 83.121, y: 3.9177094}
+        - {x: 83.121, y: -0.08229065}
+        - {x: 89.121, y: -3.0822906}
+        - {x: 92.121, y: -3.0822906}
+        - {x: 92.121, y: 13.917709}
+      - - {x: -80.879, y: 18.91771}
+        - {x: -80.879, y: 15.917709}
+        - {x: -78.879, y: 13.917709}
+        - {x: -75.879, y: 14.917709}
+        - {x: -74.879, y: 18.91771}
+        - {x: -76.879, y: 20.91771}
+        - {x: -78.879, y: 20.91771}
+      - - {x: -78.879, y: 102.91771}
+        - {x: -78.879, y: 81.91771}
+        - {x: -77.879, y: 75.91771}
+        - {x: -74.879, y: 74.91771}
+        - {x: -71.879, y: 75.91771}
+        - {x: -70.879, y: 93.91771}
+        - {x: -70.879, y: 100.91771}
+        - {x: -73.879, y: 102.91771}
+      - - {x: -85.879, y: 146.91771}
+        - {x: -85.879, y: 134.91771}
+        - {x: -82.879, y: 129.91771}
+        - {x: -80.879, y: 129.91771}
+        - {x: -78.879, y: 130.91771}
+        - {x: -78.879, y: 143.91771}
+        - {x: -81.879, y: 146.91771}
+      - - {x: -92.879, y: 196.91771}
+        - {x: -93.879, y: 195.91771}
+        - {x: -93.879, y: 168.91771}
+        - {x: -89.879, y: 158.91771}
+        - {x: -83.879, y: 158.91771}
+        - {x: -83.879, y: 194.91771}
+        - {x: -87.879, y: 196.91771}
+      - - {x: -74.879, y: 225.91771}
+        - {x: -71.879, y: 226.91771}
+        - {x: -71.879, y: 229.91771}
+        - {x: -74.879, y: 230.91771}
+        - {x: -76.879, y: 228.91771}
+      - - {x: -91.879, y: 228.91771}
+        - {x: -88.879, y: 229.91771}
+        - {x: -88.879, y: 232.91771}
+        - {x: -91.879, y: 233.91771}
+        - {x: -93.879, y: 231.91771}
+      - - {x: 78.121, y: 260.91772}
+        - {x: 81.121, y: 261.91772}
+        - {x: 81.121, y: 264.91772}
+        - {x: 78.121, y: 265.91772}
+        - {x: 76.121, y: 263.91772}
+      - - {x: 89.121, y: 306.91772}
+        - {x: 88.121, y: 303.91772}
+        - {x: 91.121, y: 299.91772}
+        - {x: 92.121, y: 299.91772}
+        - {x: 92.121, y: 305.91772}
+        - {x: 91.121, y: 306.91772}
+      - - {x: 25.121002, y: 321.91772}
+        - {x: 25.121002, y: 318.91772}
+        - {x: 28.121002, y: 316.91772}
+        - {x: 31.121002, y: 316.91772}
+        - {x: 33.121002, y: 317.91772}
+        - {x: 33.121002, y: 320.91772}
+        - {x: 30.121002, y: 323.91772}
+        - {x: 27.121002, y: 323.91772}
+      - - {x: -92.879, y: 347.91772}
+        - {x: -93.879, y: 342.91772}
+        - {x: -91.879, y: 340.91772}
+        - {x: -90.879, y: 340.91772}
+        - {x: -87.879, y: 343.91772}
+        - {x: -87.879, y: 346.91772}
+        - {x: -89.879, y: 348.91772}
+      - - {x: -14.878998, y: 359.91772}
+        - {x: -13.878998, y: 356.91772}
+        - {x: -8.878998, y: 356.91772}
+        - {x: -6.878998, y: 358.91772}
+        - {x: -6.878998, y: 359.91772}
+    - name: persoactionreverse1-a_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 492
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-a_2
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 452
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-a_3
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 424
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-a_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 363
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-a_5
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 248
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: persoactionreverse1-a_6
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 134
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
