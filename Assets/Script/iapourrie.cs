@@ -8,6 +8,11 @@ public class iapourrie : MonoBehaviour {
 
     public Vector3 speed;
     public float detect;
+
+	void Start()
+	{
+		target = GameObject.FindGameObjectWithTag ("Player").transform;
+	}
 	
 	void Update ()
     {

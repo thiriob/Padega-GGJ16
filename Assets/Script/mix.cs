@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 public class mix : MonoBehaviour
 {
+    public GameObject boss;
     public GameObject Grounds;
     public GameObject Walls;
     public Vector3 tmp;
@@ -13,15 +14,19 @@ public class mix : MonoBehaviour
     public GameObject[] objets;
     public float[] pourcentage;
     public Vector3[] decalobj;
+    public bool[] insalle;
+	public GameObject BOSS;
 
-    void putobject(int j, int k, int dist, float mult)
+    void putobject(int j, int k, int dist, float mult, bool is_salle)
     {
         float rnd = Random.Range(0, 100);
-        GameObject clone;
 
         for (int i = 0; i < pourcentage.Length; i++)
-            if (pourcentage[i] * mult >= rnd)
-                clone = (GameObject)Instantiate(objets[i], transform.position + transform.right * dist * (-k + decalobj[i].y) + transform.forward * dist * (j + decalobj[i].x) + transform.up, objets[i].transform.rotation);
+            if (pourcentage[i] * mult >= rnd && insalle[i] == is_salle) 
+            {
+                Instantiate(objets[i], transform.position + transform.right * dist * (-k + decalobj[i].y) + transform.forward * dist * (j + decalobj[i].x) + transform.up, objets[i].transform.rotation);
+                return;
+            }
     }
 
     void pathmerge(GameObject parent)
@@ -59,6 +64,7 @@ public class mix : MonoBehaviour
                 clone.transform.parent = Walls.transform;
                 clone = (GameObject)Instantiate(sprites[idx + 1], transform.position + tmp * width + new Vector3(0, decal2 *= -1, 0), transform.localRotation);
                 clone.transform.parent = Walls.transform;
+                putobject(1, 1, 1, 0.5f, false);
             }
             transform.Rotate(Vector3.up * Random.Range(-ang, ang));
             if (transform.rotation.y < 0.76)
@@ -95,7 +101,7 @@ public class mix : MonoBehaviour
                     clone.transform.parent = Walls.transform;
                 }
                 if (ferme == false)
-                    putobject(i, j, dist, 1);
+                    putobject(i, j, dist, 1, true);
             }
 
         }
@@ -104,7 +110,8 @@ public class mix : MonoBehaviour
 
     void Start()
     {
-        GameObject clone = (GameObject)Instantiate(sprites[2], transform.position - transform.right, transform.rotation);
+        GameObject clone = (GameObject)Instantiate(sprites[2], transform.position, transform.rotation);
+        clone.transform.position += transform.right * - 5f + transform.forward * 0.5f;
         clone.transform.parent = Walls.transform;
         chemin(Random.Range(50, 200), 4, 7, 10, 0);
         for (int i = 0; i <= nbsalle; i++)
@@ -112,24 +119,10 @@ public class mix : MonoBehaviour
             salle(Random.Range(1, 5), Random.Range(1, 5), 11, false);
             chemin(Random.Range(50, 200), 4, 7, 10, 0);
         }
-        salle(6, 6, 11, true);
-
+        salle(5, 5, 11, true);
         pathmerge(Grounds);
         pathmerge(Walls);
-
+Instantiate(boss, transform.position + transform.right * -30 + transform.forward * 30 + transform.up * 5, boss.transform.rotation);
     }
 
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.R))
-            SceneManager.LoadScene(0);
-    }
-
-	void	OnCollisionEnter(Collision hit)
-	{
-		if (hit.transform.tag == "")
-		{
-
-		}
 	}
-}

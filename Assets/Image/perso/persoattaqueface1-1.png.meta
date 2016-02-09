@@ -1,0 +1,95 @@
+fileFormatVersion: 2
+guid: 0664ed49361e8a04fafcb53556045379
+timeCreated: 1454250423
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: persoattaqueface1-1_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: persoattaqueface1-1_0
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 26
+        width: 162
+        height: 435
+      alignment: 9
+      pivot: {x: 0.52488047, y: 0.22599931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.96936, y: 128.6903}
+        - {x: 76.96936, y: 181.6903}
+        - {x: 76.96936, y: 273.6903}
+        - {x: 74.96936, y: 282.6903}
+        - {x: 36.96936, y: 328.6903}
+        - {x: 31.96936, y: 327.6903}
+        - {x: 18.96936, y: 336.6903}
+        - {x: -31.03064, y: 336.6903}
+        - {x: -64.03064, y: 315.6903}
+        - {x: -75.03064, y: 268.6903}
+        - {x: -81.03064, y: 222.6903}
+        - {x: -81.03064, y: 204.6903}
+        - {x: -73.03064, y: 158.6903}
+        - {x: -79.03064, y: 78.6903}
+        - {x: -72.03064, y: -34.3097}
+        - {x: -59.03064, y: -97.3097}
+        - {x: 37.96936, y: -97.3097}
+        - {x: 42.96936, y: -93.3097}
+        - {x: 43.96936, y: 34.6903}
+        - {x: 75.96936, y: 53.6903}
+      - - {x: -63.03064, y: 312.6903}
+        - {x: -62.03064, y: 310.6903}
+        - {x: -56.03064, y: 310.6903}
+        - {x: -56.03064, y: 317.6903}
+        - {x: -59.03064, y: 317.6903}
+        - {x: -63.03064, y: 314.6903}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

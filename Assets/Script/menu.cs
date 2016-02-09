@@ -22,11 +22,15 @@ public class menu : MonoBehaviour
 
     void Update()
     {
-        if (esc /*&& start*/)
+		if (esc && Input.GetButton("START"))
         {
             b1.SetActive(true);
             b2.SetActive(true);
         }
+		if (Input.GetButton("START"))
+		{
+			OnMouseDown ();
+		}
     }
 
     void OnMouseDown()

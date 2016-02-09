@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 7cdcc05883613564cb580d1d6aafb200
+timeCreated: 1454249061
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idleface_0
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Idleface_0
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 22
+        width: 156
+        height: 435
+      alignment: 9
+      pivot: {x: 0.5147644, y: 0.23526499}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 75.69675, y: 44.65973}
+        - {x: 69.69675, y: 88.65973}
+        - {x: 60.696747, y: 125.65973}
+        - {x: 75.69675, y: 180.65973}
+        - {x: 75.69675, y: 269.65973}
+        - {x: 73.69675, y: 278.65973}
+        - {x: 35.696747, y: 324.65973}
+        - {x: 7.696747, y: 332.65973}
+        - {x: -37.303253, y: 332.65973}
+        - {x: -80.30325, y: 268.65973}
+        - {x: -80.30325, y: 189.65973}
+        - {x: -74.30325, y: 154.65973}
+        - {x: -72.30325, y: 112.65973}
+        - {x: -80.30325, y: 50.65973}
+        - {x: -80.30325, y: 49.65973}
+        - {x: -66.30325, y: -32.34027}
+        - {x: -58.303253, y: -97.34027}
+        - {x: 53.696747, y: -97.34027}
+        - {x: 47.696747, y: -43.34027}
+        - {x: 74.69675, y: -32.34027}
+        - {x: 75.69675, y: -27.340271}
+      - - {x: -64.30325, y: 308.65973}
+        - {x: -63.303253, y: 306.65973}
+        - {x: -57.303253, y: 306.65973}
+        - {x: -57.303253, y: 313.65973}
+        - {x: -60.303253, y: 313.65973}
+        - {x: -64.30325, y: 310.65973}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
