@@ -131,7 +131,7 @@ public class cursor : MonoBehaviour {
 
 		i = -1;
 		while (++i < PlayerPrefs.GetInt ("Objects"))
-			GameObject.Find ("OBJ" + real(i) + "(Clone)").transform.FindChild ("NB").GetComponent<TextMesh> ().text = PlayerPrefs.GetInt ("YOBJNB" + i).ToString ();
+			GameObject.Find ("OBJ" + real(i) + "(Clone)").transform.Find ("NB").GetComponent<TextMesh> ().text = PlayerPrefs.GetInt ("YOBJNB" + i).ToString ();
 	}
 
 	void finish(){

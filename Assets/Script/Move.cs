@@ -118,13 +118,13 @@ public class Move : MonoBehaviour
 
 	void	manage_stamina()
 	{
-		this.transform.FindChild ("stamina").GetComponent<Transform> ().localScale = new Vector3 ((stamina / stamemax), 0.1f, 0.2f);
+		this.transform.Find ("stamina").GetComponent<Transform> ().localScale = new Vector3 ((stamina / stamemax), 0.1f, 0.2f);
 		if (stamina < stamemax)
 			stamina += regenstam;
 		if (stamina < consostam)
-			this.transform.FindChild ("stamina").GetComponent<MeshRenderer> ().material.color = gris;
+			this.transform.Find ("stamina").GetComponent<MeshRenderer> ().material.color = gris;
 		else
-			this.transform.FindChild ("stamina").GetComponent<MeshRenderer> ().material.color = jaune;
+			this.transform.Find ("stamina").GetComponent<MeshRenderer> ().material.color = jaune;
 	}
 
 	void set_frappe()
